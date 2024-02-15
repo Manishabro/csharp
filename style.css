@@ -1,0 +1,61 @@
+ body {
+            background-color: #343a40;
+            color: #ffffff;
+            padding-top: 56px; /* Adjusted for the fixed navbar */
+        }
+        .program-section {
+            margin-top: 20px;
+        }
+        .program-card {
+            border: 1px solid #000000;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            background-color: #ececec;
+            color: #343a40;
+            position: relative;
+        }
+        .copy-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #d3000e;
+            cursor: pointer;
+        }
+        .navbar {
+            background-color: #07ff51;
+            color: white;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 5px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            opacity: 0.9;
+            border-top: 1px solid #10d11a;
+        }
+        .footer-icons {
+            font-size: 24px;
+            margin: 0 10px;
+            color: #67f800;
+            transition: color 0.3s ease-in-out;
+        }
+        .footer-icons:hover {
+            color: #ffffff;
+        }
+        .dark-toast {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            z-index: 1000;
+            display: none;
+        }
+    
