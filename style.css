@@ -1,10 +1,10 @@
  body {
             background-color: #343a40;
             color: #ffffff;
-            padding-top: 56px; /* Adjusted for the fixed navbar */
+            padding-top: 54px; /* Adjusted for the fixed navbar */
         }
         .program-section {
-            margin-top: 20px;
+            margin-top: 10px;
         }
         .program-card {
             border: 1px solid #000000;
@@ -23,7 +23,7 @@
             cursor: pointer;
         }
         .navbar {
-            background-color: #07ff51;
+            background-color: #303030;
             color: white;
         }
         .footer {
