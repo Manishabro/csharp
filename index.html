@@ -119,25 +119,34 @@ namespace ConsoleApplication2
                 <div class="card-body">
                     <h5 class="card-title">2. Armstrong Number</h5>
                     <pre><code class="csharp" id="program2">
-                        using System;
-                        class Program
-                        {
-                        static void Main()
-                        {
-                        int a, b, c, d;
-                        for (int i = 1; i &lt;= 1000; i++)
-                        {
-                        a = i / 100;
-                        b = (i - a * 100) / 10;
-                        c = (i - a * 100 - b * 10);
-                        d = a * a * a + b * b * b + c * c * c;
-                        if (i == d)
-                        {
-                        Console.WriteLine(i);
-                        }
-                        }
-                        }
-                        }
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main()
+        {
+            int a, b, c, d;
+            for (int i = 1; i <= 1000; i++)
+            {
+                a = i / 100;
+                b = (i / 10) % 10; 
+                c = i % 10;
+                d = a * a * a + b * b * b + c * c * c;
+                if (i == d)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            Console.ReadLine();
+        }
+    }
+}
                     </code></pre>
                 </div>
             </div>
@@ -152,25 +161,33 @@ namespace ConsoleApplication2
                 <div class="card-body">
                     <h5 class="card-title">3. Develop a C# program to list all substrings in a given string. [Hint: use of Substring() method]</h5>
                     <pre><code class="csharp" id="program3">
-                        using System;
+using System;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-                        class Program
-                        {
-                            static void Main(string[] args)
-                            {
-                                Console.Write("Enter a string: ");
-                                string inputString = Console.ReadLine();
-                        
-                                Console.WriteLine("All substrings of the given string are:");
-                                for (int i = 0; i < inputString.Length; i++)
-                                {
-                                    for (int j = i + 1; j <= inputString.Length; j++)
-                                    {
-                                        Console.WriteLine(inputString.Substring(i, j - i));
-                                    }
-                                }
-                            }
-                        }
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter a string: ");
+            string inputString = Console.ReadLine();
+            Console.WriteLine("All substrings of the given string are:");
+            for (int i = 0; i < inputString.Length; i++)
+            {
+                for (int j = i + 1; j <= inputString.Length; j++)
+                {
+                    Console.WriteLine(inputString.Substring(i, j - i));
+                }
+            }
+            Console.ReadLine();
+        }
+    }
+}
                         
                     </code></pre>
                 </div>
@@ -186,49 +203,59 @@ namespace ConsoleApplication2
                 <div class="card-body">
                     <h5 class="card-title">4. Develop a C# program to demonstrate Division by Zero and Index Out of Range exceptions.</h5>
                     <pre><code class="csharp" id="program4">
-                        using System;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-                        class Program
-                        {
-                            static void Main(string[] args)
-                            {
-                                // Declare an array of integers
-                                int[] numbers = { 10, 20, 30, 40, 50 };
-                        
-                                // Declare a variable to store the result of division
-                                int result = 0;
-                        
-                                // Use a try block to execute the code that may cause exceptions
-                                try
-                                {
-                                    // Attempt to divide the first element of the array by the user input
-                                    Console.Write("Enter a number to divide by: ");
-                                    int divisor = int.Parse(Console.ReadLine());
-                                    result = numbers[0] / divisor;
-                        
-                                    // Attempt to access the sixth element of the array
-                                    Console.WriteLine("The sixth element of the array is: " + numbers[5]);
-                                }
-                                // Use a catch block to handle the specific exception
-                                catch (DivideByZeroException ex)
-                                {
-                                    // Display the message of the exception
-                                    Console.WriteLine("Division by zero exception: " + ex.Message);
-                                }
-                                // Use another catch block to handle another specific exception
-                                catch (IndexOutOfRangeException ex)
-                                {
-                                    // Display the message of the exception
-                                    Console.WriteLine("Index out of range exception: " + ex.Message);
-                                }
-                                // Use a finally block to execute the code that always runs
-                                finally
-                                {
-                                    // Display the result of the division
-                                    Console.WriteLine("The result of the division is: " + result);
-                                }
-                            }
-                        }
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           
+ {
+
+int[] numbers = { 10, 20, 30, 40, 50 };
+
+int result = 0;
+
+try
+ {
+
+ Console.Write("Enter a number to divide by: ");
+int divisor = int.Parse(Console.ReadLine());
+ result = numbers[0] / divisor;
+
+ Console.WriteLine("The sixth element of the array is: " + numbers[5]);
+ }
+
+catch (DivideByZeroException ex)
+ {
+
+ Console.WriteLine("Division by zero exception: " + ex.Message);
+ }
+
+catch (IndexOutOfRangeException ex)
+ {
+
+
+ Console.WriteLine("Index out of range exception: " + ex.Message);
+ }
+
+finally
+ {
+
+ Console.WriteLine("The result of the division is: " + result);
+ }
+Console.ReadLine();
+ }
+}
+        }
+    }
+
                         
                     </code></pre>
                 </div>
@@ -244,56 +271,61 @@ namespace ConsoleApplication2
                 <div class="card-body">
                     <h5 class="card-title">5. Develop a C# program to generate and print Pascal Triangle using Two Dimensional arrays.</h5>
                     <pre><code class="csharp" id="program5">
-                        using System;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-                        class Program
-                        {
-                            static void Main(string[] args)
-                            {
-                                // Get the number of rows from the user
-                                Console.Write("Enter the number of rows: ");
-                                int n = int.Parse(Console.ReadLine());
-                        
-                                // Declare a two dimensional array to store the Pascal Triangle
-                                int[,] pascal = new int[n, n];
-                        
-                                // Loop through the rows
-                                for (int i = 0; i < n; i++)
-                                {
-                                    // Loop through the columns
-                                    for (int j = 0; j <= i; j++)
-                                    {
-                                        // The first and last element of each row is 1
-                                        if (j == 0 || j == i)
-                                        {
-                                            pascal[i, j] = 1;
-                                        }
-                                        // The other elements are the sum of the two elements above it
-                                        else
-                                        {
-                                            pascal[i, j] = pascal[i - 1, j - 1] + pascal[i - 1, j];
-                                        }
-                                    }
-                                }
-                        
-                                // Loop through the rows to print the Pascal Triangle
-                                for (int i = 0; i < n; i++)
-                                {
-                                    // Print some spaces for alignment
-                                    for (int k = 0; k < n - i - 1; k++)
-                                    {
-                                        Console.Write(" ");
-                                    }
-                                    // Print the elements of the current row
-                                    for (int j = 0; j <= i; j++)
-                                    {
-                                        Console.Write(pascal[i, j] + " ");
-                                    }
-                                    // Print a new line
-                                    Console.WriteLine();
-                                }
-                            }
-                        }
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.Write("Enter the number of rows: ");
+            int n = int.Parse(Console.ReadLine());
+
+            int[,] pascal = new int[n, n];
+
+            for (int i = 0; i < n; i++)
+            {
+
+                for (int j = 0; j <= i; j++)
+                {
+
+                    if (j == 0 || j == i)
+                    {
+                        pascal[i, j] = 1;
+                    }
+
+                    else
+                    {
+                        pascal[i, j] = pascal[i - 1, j - 1] + pascal[i - 1, j];
+                    }
+                }
+            }
+
+            for (int i = 0; i < n; i++)
+            {
+
+                for (int k = 0; k < n - i - 1; k++)
+                {
+                    Console.Write(" ");
+                }
+
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write(pascal[i, j] + " ");
+                }
+
+                Console.WriteLine();
+            }
+            Console.ReadLine();
+        }
+    }
+}
                     </code></pre>
                 </div>
             </div>
@@ -308,53 +340,55 @@ namespace ConsoleApplication2
                 <div class="card-body">
                     <h5 class="card-title">6. Develop a C# program to generate and print Floyd's Triangle using Jagged arrays.</h5>
                     <pre><code class="csharp" id="program6">
-                        using System;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-                        class Program
-                        {
-                            static void Main(string[] args)
-                            {
-                                // Get the number of rows from the user
-                                Console.Write("Enter the number of rows: ");
-                                int rows = int.Parse(Console.ReadLine());
-                        
-                                // Declare a jagged array of size rows
-                                int[][] triangle = new int[rows][];
-                        
-                                // Initialize a counter variable
-                                int counter = 1;
-                        
-                                // Loop through the rows of the jagged array
-                                for (int i = 0; i < rows; i++)
-                                {
-                                    // Initialize the ith row with an array of size i+1
-                                    triangle[i] = new int[i + 1];
-                        
-                                    // Loop through the columns of the ith row
-                                    for (int j = 0; j < i + 1; j++)
-                                    {
-                                        // Assign the counter value to the current element
-                                        triangle[i][j] = counter;
-                        
-                                        // Increment the counter
-                                        counter++;
-                                    }
-                                }
-                        
-                                // Print the jagged array as Floyd's Triangle
-                                Console.WriteLine("Floyd's Triangle:");
-                                for (int i = 0; i < rows; i++)
-                                {
-                                    for (int j = 0; j < i + 1; j++)
-                                    {
-                                        // Print the current element with a space
-                                        Console.Write(triangle[i][j] + " ");
-                                    }
-                                    // Print a new line after each row
-                                    Console.WriteLine();
-                                }
-                            }
-                        }
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the number of rows: ");
+            int rows = int.Parse(Console.ReadLine());
+
+            int[][] triangle = new int[rows][];
+
+            int counter = 1;
+
+            for (int i = 0; i < rows; i++)
+            {
+
+                triangle[i] = new int[i + 1];
+
+                for (int j = 0; j < i + 1; j++)
+                {
+
+                    triangle[i][j] = counter;
+
+                    counter++;
+                }
+            }
+
+            Console.WriteLine("Floyd's Triangle:");
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < i + 1; j++)
+                {
+
+                    Console.Write(triangle[i][j] + " ");
+                }
+
+                Console.WriteLine();
+            }
+             Console.ReadLine();
+        }
+       
+    }
+}
                     </code></pre>
                 </div>
             </div>
