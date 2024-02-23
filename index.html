@@ -721,6 +721,170 @@ Console.ReadKey();
 
 </div>
 
+<div class="row">
+        <div class="col-md-12">
+            <div class="card program-card">
+                <i class="fas fa-copy copy-icon" onclick="copyToClipboard('program10')"></i>
+                <div class="card-body">
+                    <h5 class="card-title">11. Develop a C# program to create an abstract class Shape with abstract methods calculateArea() and
+calculatePerimeter().
+</h5>
+                    <pre><code class="csharp" id="program11">
+                        using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab_program_11
+{
+
+    abstract class Shape
+    {
+        public abstract double calculateArea();
+        public abstract double calculatePerimeter();
+    }
+
+    class Circle : Shape
+    {
+        private double radius;
+
+        public Circle(double radius)
+        {
+            this.radius = radius;
+        }
+
+        public override double calculateArea()
+        {
+            return Math.PI * radius * radius;
+        }
+
+        public override double calculatePerimeter()
+        {
+            return 2 * Math.PI * radius;
+        }
+    }
+
+    class Triangle : Shape
+    {
+        private double side1;
+        private double side2;
+        private double side3;
+
+        public Triangle(double side1, double side2, double side3)
+        {
+            this.side1 = side1;
+            this.side2 = side2;
+            this.side3 = side3;
+        }
+
+        public override double calculateArea()
+        {
+            double s = (side1 + side2 + side3) / 2;
+            return Math.Sqrt(s * (s - side1) * (s - side2) * (s - side3));
+        }
+
+        public override double calculatePerimeter()
+        {
+            return side1 + side2 + side3;
+        }
+    }
+    public class ShapeClient
+    {
+        public static void Main(string[] args)
+        {
+            double side1 = 13, side2 = 9, side3=10;
+            Shape triangle = new Triangle(side1, side2,side3);
+            Console.WriteLine("The sides of circle are   side1:"+side1+"  side2:"+side2+"  side3:"+side3+ "\nThe area of the triangle is: " + triangle.calculateArea()
+            + "\nThe perimeter of the triangle is: " + triangle.calculatePerimeter() + "."); 
+            double radius = 3;
+            Shape circle = new Circle(radius);
+            Console.WriteLine("\nThe radius of the circle is: " + radius
+            + "\nThe area of the circle is: " + circle.calculateArea()
+            + "\nThe perimeter of the circle is: " + circle.calculatePerimeter() + ".");
+            Console.ReadKey();
+        }
+    }
+
+}
+
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+     <div class="row">
+        <div class="col-md-12">
+            <div class="card program-card">
+                <i class="fas fa-copy copy-icon" onclick="copyToClipboard('program9')"></i>
+                <div class="card-body">
+                    <h5 class="card-title">12. Placeholder for Program 12</h5>
+                    <pre><code class="csharp" id="program12">
+using System;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace 
+{
+
+    interface Resizable
+    {
+        int resizeWidth(int width);
+        int resizeHeight(int height);
+    }
+
+    class Rectangle : Resizable
+    {
+        private int width;
+        private int height;
+
+        public Rectangle(int width, int height)
+        {
+            this.width = width;
+            this.height = height;
+            Console.WriteLine("Initial width and height of rectangle ("+this.width+","+this.height+")");
+        }
+
+        public int resizeWidth(int width)
+        {
+            this.width = width;
+            return width;
+        }
+
+        public int resizeHeight(int height)
+        {
+            this.height = height;
+            return height;
+        }
+    }
+    public class ShapeClient
+    {
+        public static void Main(string[] args)
+        {
+            Rectangle r = new Rectangle(10, 15);
+            Console.WriteLine("Resize width of rectangle "+ r.resizeWidth(15));
+            Console.WriteLine("Resize height of rectangle "+ r.resizeHeight(20));
+
+            Console.ReadKey();
+        }
+    }
+
+}
+
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </div>               
+                
+
 
 
 <div id="dark-toast" class="dark-toast">
