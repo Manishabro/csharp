@@ -59,11 +59,14 @@
             display: none;
         }
           a.button {
-             padding: 1px 6px;
-             border: 1px outset buttonborder;
-             border-radius: 3px;
-             color: buttontext;
-             background-color: buttonface;
-             text-decoration: none;
-          }
+             position: absolute;
+             top:50%;
+             background-color:#0a0a23;
+             color: #fff;
+             border:none; 
+             border-radius:10px; 
+             padding:15px;
+             min-height:30px; 
+             min-width: 120px;
+           }
               
