@@ -62,15 +62,15 @@
              position: absolute;
              top:50%;
              background-color:#0a0a23;
-             color: #fff;
+             color: #ffff00;
              border:none; 
              border-radius:10px; 
              padding:15px;
              min-height:30px; 
-             min-width: 120px;
+             min-width: 60px;
            }
            .button:hover {
-             background-color:#002ead;
+             background-color:#ffe4b5;
              transition: 0.7s;
          }
                      
