@@ -68,4 +68,17 @@
              padding:15px;
              min-height:30px; 
              min-width: 60px;
+        }   
+           .button1 {background-color: #04AA6D;} /* Green */
+           .button2 {background-color: #008CBA;} /* Blue */
+           .button3 {background-color: #f44336;} /* Red */
+           .button4 {background-color: #e7e7e7; color: black;} /* Gray */
+           .button5 {background-color: #555555;} /* Black */ 
         }
+
+           .button:hover {
+             background-color:#ffe4b5;
+             transition: 0.7s;
+        }
+         
+
