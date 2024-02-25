@@ -69,18 +69,18 @@
              min-height:30px; 
              min-width: 60px;
         }   
-         .button1 {background-color: #04AA6D;} /* Green */
-          .button2 {background-color: #008CBA;} /* Blue */
-          .button3 {background-color: #f44336;} /* Red */
+         .button1 {background-color: #04AA6D; color: black;} /* Green */
+          .button2 {background-color: #008CBA; color: black;} /* Blue */
+          .button3 {background-color: #f44336; color: black;} /* Red */
           .button4 {background-color: #ffe4b5; color: black;} /* Gray */
-          .button6 {background-color: #ffe4b5;} /* Black */ 
-          .button7 {background-color: #ffe4b5;} /* Black */ 
-          .button8 {background-color: #ffe4b5;} /* Black */ 
-          .button9 {background-color: #ffe4b5;} /* Black */ 
-          .button9 {background-color: #ffe4b5;} /* Black */ 
-          .button10 {background-color: #ffe4b5;} /* Black */ 
-          .button11 {background-color: #ffe4b5;} /* Black */ 
-          .button0 {background-color: #ffe4b5;} /* Black */ 
+          .button6 {background-color: #ffe4b5; color: black;} /* Black */ 
+          .button7 {background-color: #ffe4b5; color: black;} /* Black */ 
+          .button8 {background-color: #ffe4b5; color: black;} /* Black */ 
+          .button9 {background-color: #ffe4b5; color: black;} /* Black */ 
+          .button9 {background-color: #ffe4b5; color: black;} /* Black */ 
+          .button10 {background-color: #ffe4b5; color: black;} /* Black */ 
+          .button11 {background-color: #ffe4b5; color: black;} /* Black */ 
+          .button0 {background-color: #ffe4b5; color: black;} /* Black */ 
 
         }
 
@@ -92,3 +92,6 @@
          .button8:hover { background-color:#ff4314;   transition: 0.7s;}
          .button9:hover { background-color:#ff4314;   transition: 0.7s;}
          .button10:hover { background-color:#ff4314;   transition: 0.7s;}
+         .button11:hover { background-color:#ff4314;   transition: 0.7s;}
+         .button1:hover { background-color:#ff4314;   transition: 0.7s;}
+         .button2:hover { background-color:#ff4314;   transition: 0.7s;}
